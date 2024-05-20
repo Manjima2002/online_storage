@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "428869774504",
+    "project_id": "onlinedatabase-cbaa6",
+    "storage_bucket": "onlinedatabase-cbaa6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428869774504:android:4e0ceb427ea611b26b669d",
+        "android_client_info": {
+          "package_name": "com.example.online_storage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAoDO-TZOtfpUhlp809d4t18u-ILEU8UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
