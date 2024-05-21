@@ -14,7 +14,7 @@ class LoginProvider extends ChangeNotifier {
   final _db = FirebaseFirestore.instance;
 // create user
   createUser(
-      // required argment added to the function
+      // required argument added to the function
       {required String emailid,
       required String name,
       required String mobileNumber,
@@ -49,7 +49,7 @@ class LoginProvider extends ChangeNotifier {
 // got database and check the path name is ther
 // if not there create a database on the same name
 // goto the collection (user) crete the data as json object
-//
+
         return _db
             .collection('User')
             .add(userData)
@@ -61,9 +61,9 @@ class LoginProvider extends ChangeNotifier {
   }
 }
 
-/// exceptions handling // error handling
+/// exceptions handling // error handling.
 ///
-/// we writed the code insider try bloc
+/// we writed the code insider try block.
 ///
-/// if is there any error occured catch will catch error and perform other actions
-///
+/// if is there any error occured catch will catch error and perform other actions.
+

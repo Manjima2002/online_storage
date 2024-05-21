@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:lottie/lottie.dart';
 import 'package:online_storage/loginprovide.dart';
 import 'package:provider/provider.dart';
 
@@ -14,7 +15,7 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
-    // added textEditing controllers for taking values from textfield
+    // added textEditing controllers for taking values from textfield.
     final emailidcontroller = TextEditingController();
     final passwordcontroller = TextEditingController();
     final nameController = TextEditingController();
@@ -29,6 +30,12 @@ class _LoginPageState extends State<LoginPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Container(
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(),
+            child: Lottie.asset('asset/Animation - 1716285796948.json'),
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextFormField(
@@ -88,7 +95,15 @@ class _LoginPageState extends State<LoginPage> {
                     mobileNumber: mobileNumber,
                     password: password);
               },
-              child: Text("Submit")),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all<Color>(
+                    Color.fromARGB(255, 243, 223, 5)),
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+              ),
+              child: Text(
+                "Submit",
+                style: TextStyle(color: Colors.black),
+              )),
         ],
       ),
     );
